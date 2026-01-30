@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="expense_tracker.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <h1 class="main-heading"><em>Expense Tracker</em></h1>
+        <p class="head-paragraph"><i>"Simplify expense tracking, amplify savings"</i></p>
+    </header>
+
+    <main class="container">
+
+        <button id="addexpense" class="plusbutton">+</button>
+
+        <section class="expense-form">
+            <h2>Add Expenses</h2>
+
+            <!-- ADD EXPENSE FORM -->
+            <form>
+                <h2>Your Expenses</h2>
+
+                <label for="expense-name">Expense Name:-</label><br>
+                <input type="text" id="expense-name" placeholder="Expense Name" required><br><br>
+
+                <label for="category">Category:-</label><br>
+                <select id="category" required>
+                    <option value="transfer" disabled selected>~Select Category~</option>
+                    <option value="food&dinning">Food & Dining</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="travel">Travel</option>
+                    <option value="healthcare&medicine">HealthCare & Medicines</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="investment">Investments</option>
+                </select><br><br>
+
+                <label for="amount">Amount:-</label><br>
+                <input type="number" id="amount" placeholder="Amount" required><br><br>
+
+                <label for="date">Date:-</label><br>
+                <input type="date" id="date" required><br><br>
+
+                <button type="submit">Add Expense</button>
+
+                </form>
+
+        </section>
+
+    </main>
+
+    <script src="expense_tracker.js"></script>
+
+</body>
+
+</html>
